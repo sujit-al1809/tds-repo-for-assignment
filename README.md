@@ -46,3 +46,5 @@ pytest tests/ -v
 ## License
 
 MIT
+
+<!-- CI trigger: prime-cache-f6816b9 run at 2026-02-22 -->
