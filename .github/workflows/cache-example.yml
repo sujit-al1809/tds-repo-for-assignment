@@ -1,0 +1,19 @@
+name: CI Cache Example
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  cache-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: prime-cache-f6816b9
+        id: cache-step
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache
+          key: cache-f6816b9
+      - name: Show cache result
+        run: echo "Cache hit: ${{ steps.cache-step.outputs.cache-hit }}"
