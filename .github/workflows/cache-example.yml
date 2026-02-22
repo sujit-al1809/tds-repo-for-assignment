@@ -16,4 +16,4 @@ jobs:
           path: ~/.cache
           key: cache-f6816b9
       - name: Show cache result
-        run: echo "Cache hit: ${{ steps.prime-cache-f6816b9.outputs.cache-hit }}"
+        run: echo Cache hit: ${{ steps.prime-cache-f6816b9.outputs.cache-hit }}
