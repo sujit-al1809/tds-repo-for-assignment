@@ -10,10 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: prime-cache-f6816b9
-        id: cache-step
+        id: prime-cache-f6816b9
         uses: actions/cache@v4
         with:
           path: ~/.cache
           key: cache-f6816b9
       - name: Show cache result
-        run: echo "Cache hit: ${{ steps.cache-step.outputs.cache-hit }}"
+        run: echo "Cache hit: ${{ steps.prime-cache-f6816b9.outputs.cache-hit }}"
